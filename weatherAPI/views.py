@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from .weather_service import fetch_current_weather_data, fetch_forecast_weather_data
+from .weather_service import fetch_current_weather_data, fetch_forecast_weather_data, fetch_history_weather_data
 from .nws_service import get_weather_location, get_forecast, get_forecast_hourly
 import logging
 
@@ -15,11 +15,22 @@ def get_weather_current(request, location):
     else:
         return JsonResponse({'error': 'Unable to fetch weather data'}, status=500)
 
-def get_weather_forecast(request, location):
+def get_weather_forecast(request, location, days="1"):
     # Fetch weather data using the weather_service.py function
-    data = fetch_forecast_weather_data(location)
+    data = fetch_forecast_weather_data(location, days)
     
     if data:
+        return JsonResponse(data)  # Return the data as JSON response
+    else:
+        return JsonResponse({'error': 'Unable to fetch weather data'}, status=500)
+
+def get_weather_history(request, location, dt):
+    # Fetch weather data using the weather_service.py function
+    data = fetch_history_weather_data(location, dt)
+    
+    if 'error' in data:
+        return JsonResponse(data, status=400)
+    elif data:
         return JsonResponse(data)  # Return the data as JSON response
     else:
         return JsonResponse({'error': 'Unable to fetch weather data'}, status=500)
