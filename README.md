@@ -13,7 +13,13 @@ api/weather/current/<str:location>/
 Gets forecast data using weatherAPI
 
 ```
-api/weather/forecast/<str:location>/
+api/weather/forecast/<str:location>,<str:days>/
+```
+
+Gets historical data using weatherAPI (currenly doesn't work, requires paid API key :( )
+
+```
+api/weather/history/<str:location>,<str:dt>/
 ```
 
 Gets daily forecast data using NWS API based on the location, where location must be coordinates lat,long.
