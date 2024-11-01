@@ -33,7 +33,9 @@ SECRET_KEY = 'django-insecure-biq)t5$g+&e-5hz!ool1it+x--e@%9=@dsy-kgfgy1frd*@)e&
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "a245.anvil.rcac.purdue.edu"
+    "a245.anvil.rcac.purdue.edu",
+    "127.0.0.1",
+    "localhost"
 ]
 
 
