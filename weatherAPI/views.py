@@ -35,13 +35,10 @@ def get_weather_history(request, location, dt):
     else:
         return JsonResponse({'error': 'Unable to fetch weather data'}, status=500)
 
-def get_nws_forecast(request, latitude, longitude):
+def get_nws_forecast(request, location):
     try:
-        lat = float(latitude)
-        lon = float(longitude)
-
         # Get location data
-        location_data, location_error = get_weather_location(lat, lon)
+        location_data, location_error = get_weather_location(location)
         if location_error:
             return JsonResponse({'error': 'Failed to retrieve location data.'}, status=location_error)
 
@@ -60,13 +57,11 @@ def get_nws_forecast(request, latitude, longitude):
     except Exception as e:
         return JsonResponse({'error': 'An internal server error occurred.'}, status=500)
 
-def get_nws_hourly_forecast(request, latitude, longitude):
+def get_nws_hourly_forecast(request, location):
     try:
-        lat = float(latitude)
-        lon = float(longitude)
 
         # Get location data
-        location_data, location_error = get_weather_location(lat, lon)
+        location_data, location_error = get_weather_location(location)
         if location_error:
             return JsonResponse({'error': 'Failed to retrieve location data.'}, status=location_error)
 
