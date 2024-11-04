@@ -22,14 +22,14 @@ Gets historical data using weatherAPI (currenly doesn't work, requires paid API 
 api/weather/history/<str:location>,<str:dt>/
 ```
 
-Gets daily forecast data using NWS API based on the location, where location must be coordinates lat,long.
+Gets daily forecast data using NWS API based on the location
 
 ```
-api/nws/forecast/<str:latitude>,<str:longitude>/
+api/nws/forecast/<str:location>/
 ```
 
-Gets hourly forecast data using NWS API based on the location, where location must be coordinates lat,long.
+Gets hourly forecast data using NWS API based on the location
 
 ```
-api/nws/forecastHourly/<str:latitude>,<str:longitude>/
+api/nws/forecastHourly/<str:location>/
 ```
