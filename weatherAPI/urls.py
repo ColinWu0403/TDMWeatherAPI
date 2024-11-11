@@ -11,4 +11,5 @@ urlpatterns = [
     path('weather/forecast/<str:location>,<str:days>/', views.get_weather_forecast, name='get_weather_forecast'),
     path('nws/forecast/<str:location>/', views.get_nws_forecast, name='nws_weather_forecast'),
     path('nws/forecastHourly/<str:location>/', views.get_nws_hourly_forecast, name='nws_weather_hourly_forecast'),
+    path('data/<str:location>/', views.get_combined_observations, name='get_combined_observations'),
 ]
