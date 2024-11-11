@@ -1,16 +1,92 @@
 {
-  "riverside": { "lat": 33.9534, "lon": -117.3962 },
-  "oakland": { "lat": 37.8044, "lon": -122.271111 },
-  "hayward": { "lat": 37.668819, "lon": -122.080795 },
-  "fresno": { "lat": 36.746841, "lon": -119.772591 },
-  "rancho cucamonga": { "lat": 34.110489, "lon": -117.594429 },
-  "modesto": { "lat": 37.639492, "lon": -121.015099 },
-  "dallas": { "lat": 32.779167, "lon": -96.808891 },
-  "mesquite": { "lat": 32.78278, "lon": -96.610001 },
-  "las vegas": { "lat": 36.114704, "lon": -115.201462 },
-  "phoenix": { "lat": 33.448376, "lon": -112.074036 },
-  "tolleson": { "lat": 33.450381, "lon": -112.255188 },
-  "casa grande": { "lat": 32.881893, "lon": -111.768036 },
-  "denver": { "lat": 39.742043, "lon": -104.991531 },
-  "kissimmee": { "lat": 28.3023, "lon": -81.4077 }
+  "Riverside": {
+    "lat": 33.9534,
+    "lon": -117.3962,
+    "State": "California",
+    "County": "Riverside"
+  },
+  "Oakland": {
+    "lat": 37.8044,
+    "lon": -122.271111,
+    "State": "California",
+    "County": "Alameda"
+  },
+  "Hayward": {
+    "lat": 37.668819,
+    "lon": -122.080795,
+    "State": "California",
+    "County": "Alameda"
+  },
+  "Fresno": {
+    "lat": 36.746841,
+    "lon": -119.772591,
+    "State": "California",
+    "County": "Fresno"
+  },
+  "Rancho Cucamonga": {
+    "lat": 34.110489,
+    "lon": -117.594429,
+    "State": "California",
+    "County": "San Bernandino"
+  },
+  "Modesto": {
+    "lat": 37.639492,
+    "lon": -121.015099,
+    "State": "California",
+    "County": "Stanislaus"
+  },
+  "Dallas": {
+    "lat": 32.779167,
+    "lon": -96.808891,
+    "State": "Texas",
+    "County": "Dallas"
+  },
+  "Mesquite": {
+    "lat": 32.78278,
+    "lon": -96.610001,
+    "State": "Texas",
+    "County": "Dallas"
+  },
+  "Irving": {
+    "lat": 32.819595,
+    "lon": -96.945419,
+    "State": "Texas",
+    "County": "Dallas"
+  },
+  "Las Vegas": {
+    "lat": 36.114704,
+    "lon": -115.201462,
+    "State": "Nevada",
+    "County": "Clark"
+  },
+  "Phoenix": {
+    "lat": 33.448376,
+    "lon": -112.074036,
+    "State": "Arizona",
+    "County": "Maricopa"
+  },
+  "Tolleson": {
+    "lat": 33.450381,
+    "lon": -112.255188,
+    "State": "Arizona",
+    "County": "Maricopa"
+  },
+  "Casa Grande": {
+    "lat": 32.881893,
+    "lon": -111.768036,
+    "State": "Arizona",
+    "County": "Pinal"
+  },
+  "Denver": {
+    "lat": 39.742043,
+    "lon": -104.991531,
+    "State": "Colorado",
+    "County": "Denver"
+  },
+  "Kissimmee": {
+    "lat": 28.3023,
+    "lon": -81.4077,
+    "State": "Florida",
+    "County": "Osceola"
+  }
 }
